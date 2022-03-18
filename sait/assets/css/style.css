@@ -1,0 +1,444 @@
+/*Фон*/
+
+
+body{
+    background-color: rgb(255, 230, 189);
+    margin: 0;
+    line-height: 1.6;
+    font-family: 'Comfortaa';
+    overflow-y: scroll;
+}
+@font-face{
+    font-family: 'Comfortaa';
+    src:url(assets/fonts/ComfortaaRegular.ttf);
+}
+h1,h2,h3,h4,h5,h6 {
+
+    
+    margin: 0;
+    padding: 0;
+}
+.header{
+    position: fixed;
+    font-family: 'Segoe UI', sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 68px;
+    z-index: 1000;
+    background-color: rgb(37, 37, 37);
+}
+
+.verh{
+    font-weight: 500;
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+    position:fixed;
+    bottom:5%;
+    right:30px;
+    opacity: .1;
+    transition: opacity 0.3s linear;
+}
+.verh:hover{
+    opacity: 100;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.dalee{
+    margin-top: 5px;
+    padding-top: 10px;
+    margin-bottom:5px;
+    width: 70%;
+    height: 60px;
+    background-color: rgb(190, 190, 190);
+    text-align: center;
+    font-size: 18pt;
+    font-weight: 700;
+    transition: background-color 0.2s linear;
+}
+
+.dalee:hover{
+    background-color: rgb(119, 119, 119);
+}
+
+.container {
+    font-family: 'Comfortaa';
+    margin-top: 25px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/*Новости*/
+/*Заголовки*/
+.zag{
+    position: relative;
+    font-weight: 700;
+    top: 0;
+    font-size: 40px;
+    color: black;
+}
+.zag:after{
+    content:"";
+    display:block;
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    background-color: rgb(255, 143, 15);
+    top: 100%;
+    left: 0;
+}
+.zagnone{
+    transition: color 0.2s linear;
+    position: relative;
+    font-weight: 700;
+    color:black;
+    text-decoration: none;
+}
+.zagnone:after{
+    content:"";
+    display:block;
+    width: 100%;
+    height: 3px;
+    background-color: rgb(255, 143, 15);
+}
+.zagnone:hover{
+    color: rgb(255, 143, 15);
+
+}
+.novosti{
+    top: 0;
+    font-family: 'Comfortaa';
+    font-size: 30pt;
+    font-weight: 700;
+    border-bottom: 3px solid rgb(0, 0, 0);
+
+}
+.igri{
+    top: 0;
+    font-family: 'Comfortaa';
+    font-size: 30pt;
+    font-weight: 700;
+    border-bottom: 3px solid rgb(0, 0, 0);
+}
+/*Киберпанк*/
+.news{
+    margin-top: 50px;
+    font-family: 'Comfortaa';
+}
+.lenta{
+    padding-bottom: 25px;
+    padding-top: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: rgb(255, 255, 255);
+    width: 70%;
+    margin-top: 45px;
+}
+.lenta1{
+    padding-bottom: 25px;
+    padding-top: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: rgb(255, 255, 255);
+    width: 70%;
+    margin-top: 4px;
+    font-family: 'Comfortaa';
+}
+
+.cybertext{
+    border-top: 3px solid  rgb(255, 143, 15);
+    margin-top: 10px;
+    padding-top: 10px;
+}
+img{
+    width: 100%;
+}
+.bag{
+    width: 390px;
+    height: 300px;
+}
+.bagi{
+    display: flex;
+    justify-content: space-between;
+}
+
+.vashno{
+    font-weight: 700;
+    color:black;
+
+}
+/*Правые блоки*/
+.stat{
+    width: 28%;
+    float: right; 
+}
+.stat1{
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 5%;
+    background-color: #fff;
+}
+.stat2{
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color:#fff;
+    margin-bottom: 5%;
+}
+
+.stat3{
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color:#fff;
+    margin-bottom: 5%;
+}
+.back{
+    border-bottom: 2px solid black;
+    color: black;
+    font-size: 20pt;
+    text-align: left;
+    width: 28%;
+    float: right;
+    margin-top: 45px;
+    text-decoration: none;
+}
+/*Игры*/
+.naz{
+   
+    font-weight: 700;
+    font-size: 30px;
+    transition: color 0.2s linear;
+    text-decoration: none;
+    color: black;
+
+}
+
+.naz:hover{
+    color:rgb(255, 143, 15);
+
+}
+
+.spisok{
+    margin-bottom: 5px;
+    font-family: 'Comfortaa';    
+}
+
+.igra1,.igra2,.igra3,.igra4,.igra5,.igra6 {
+    display: block;
+    position: relative;
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 35px;
+    width: 100%;
+    height: 210px;
+    
+   
+}
+.windows{
+    text-align: right;
+    float: right;
+    
+}
+.systema{
+    justify-content: space-between;
+    padding-left: 15px;
+    border-left: 2px solid black;
+}
+
+.har{
+    font-size: 30pt;
+    font-weight: 700;
+    border-bottom: 3px solid rgb(255, 143, 15);
+}
+.spisokimage{
+    border: 3px solid rgb(0, 0, 0);
+    margin: 0 10px 0 0;
+    top: 0;
+    width: 150px;
+    height: 180px;
+    float: left;
+}
+
+.igriimage{
+    width: 650px;
+    margin-right: 25px;
+}
+.info{
+    font-size: 24pt;
+    font-weight: 700;
+}
+span{
+    color:rgb(78, 78, 78);
+}
+.scrin{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+
+/*The Wither 3*/
+
+.wither{
+    background-color: #fff;
+    font-family: 'Comfortaa';
+    padding: 5px 25px 25px 25px;
+}
+.scr{
+    margin-top: 15px;
+    height: 300px;
+    width: 560px;
+}
+/*Header*/
+
+.header_inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_logo{
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+    transition: color 0.2s linear;
+    align-items: center;
+}
+
+.header_logo:hover{
+    color:rgb(255, 143, 15);
+}
+
+nav{
+    font-family: 'Segoe UI';
+    font-size: 30px;
+    font-weight: 200;
+    
+}
+
+.nav_link{
+    display: inline-block;
+    margin: 0 10px;
+    vertical-align: top;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s linear;
+}
+
+
+.nav_link:hover{
+    color:rgb(255, 143, 15)
+}
+.nav_mapsi{
+    display: inline-block;
+    margin: 0 10px;
+    vertical-align: top;
+    color: black;
+    text-decoration: none;
+    transition: color 0.2s linear;
+}
+/*Статьи*/
+
+.staty{
+    display: flex;
+    justify-content: space-between;
+}
+
+.block1,.block2,.block3,.block4,.block5,.block6{
+    height: 300px;
+    width: 370px;
+    background-color: #fff;
+    margin-top: 35px;
+}
+
+.statzag{
+    transition: color 0.2s linear;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-bottom: 0;
+    padding-top: 0;
+    padding-left: 10px;
+    padding-right: 15px;
+    font-size: 15pt;
+    font-weight: 700;
+    border-left: 2px solid rgb(255, 143, 15);
+    
+}
+
+.statzag:hover{
+    color:rgb(255, 143, 15);
+}
+.mapsi{
+    height: 700px;
+    width: 1200px;
+    background-color: #fff;
+    margin-top: 35px;
+}
+/*Топ месяца*/
+
+.top{
+    text-align: center;
+    top: 0;
+    font-family: 'Comfortaa';
+    font-size: 35pt;
+    font-weight: 700;
+    
+}
+.top1{
+
+    top: 0;
+    font-family: 'Comfortaa';
+    font-size: 35pt;
+    font-weight: 700;
+    color: #333333;
+    display: block;
+    text-align:center;
+    text-decoration: none;
+}
+
+
+.zagtop{
+    padding-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    font-weight: 700;
+    top: 0;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 143, 15);
+    
+}
+
+.silk{
+    top: 0;
+    font-family: 'Comfortaa';
+    font-size: 35pt;
+    font-weight: 700;
+    color: #333333;
+    display: block;
+    text-align:center;
+    text-decoration: none;
+    transition: color 0.2s linear;
+}
+
+.silk:hover{
+    color: rgb(255, 143, 15);
+}
+
